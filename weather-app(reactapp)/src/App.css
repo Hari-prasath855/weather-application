@@ -1,0 +1,102 @@
+.box-container {
+  height: 100vh;
+  width: auto;
+  background-color: #020D45;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-header {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.topright {
+  position: absolute;
+  top: 40px;
+  right: 16px;
+  font-size: 18px;
+  background-color: white;
+}
+
+.box-input {
+  width: 300px;
+  height: 6vh;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.box-searchButton {
+  padding: 8px;
+  height: 6vh;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.box-horizontalLine {
+  margin: 20px;
+  border: none;
+  border-top: 1px solid #bbb;
+  width: 90%;
+  position: relative;
+}
+
+.horizontalLineText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #020D45;
+  padding: 0 10px;
+  color: white;
+}
+
+.box-cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    padding: 5px 5px;
+  }
+
+  .topright {
+    top: 90px;
+    right: 40px;
+  }
+
+  .box-input {
+    width: 150px;
+    height: 3vh;
+  }
+  
+  .box-searchButton {
+    padding: 8px;
+    height: 3vh;
+  }
+
+  .box-cardContainer {
+    flex-wrap: wrap;
+  }
+
+  .box-header h1 {
+    margin-bottom: 90px;
+  }
+
+}
+
+
