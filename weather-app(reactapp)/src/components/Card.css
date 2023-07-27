@@ -1,0 +1,72 @@
+.container {
+  margin: 20px;
+  width: 40%;
+  height: 500px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cardContent {
+  margin: 10px 20px 20px;
+  font-size: large;
+}
+
+.weatherIconContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 40px;
+  text-align: center;
+}
+
+.infoContainer {
+  height: 10vh;
+  margin: 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.infoBlock {
+  width: 25%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+  }
+
+  .temperature {
+    font-size: 30px;
+  }
+
+  .infoBlock {
+    width: 50%;
+  }
+}
